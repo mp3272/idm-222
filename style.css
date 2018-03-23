@@ -1,0 +1,404 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    /* The image used */
+    background-image: url("images/meet2.JPG");
+
+    
+    min-height: 500px; 
+
+    /*to create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.parallax1>img{
+  width: 100%;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("images/gardyloo.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    /* The image used */
+    background-image: url("images/meet5.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 500px) {
+    .parallax1 {
+        
+        background-image: url('images/meet4.jpg');
+
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .parallax2 {
+        
+        background-image: url('images/meet7.jpg');
+
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .parallax3 {
+        
+        background-image: url('images/meet1.jpg');
+
+    }
+  }
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+html {
+    font-family: "helvetica neue", sans-serif;
+}
+
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+  }
+.menu {
+    margin: 0 30px 0 0;
+
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+    background-color: #0000;
+}
+
+span {
+    color: #54D17A;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+
+}
+#toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+
+    }
+
+    .menu 
+    {
+        text-align: center;
+        width: 100%;
+        display: none;
+       
+       
+
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+            cursor: pointer;
+            background-color: white;
+
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+    
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: space-between;
+    margin: 2rem;
+  }
+
+  #meet{
+    width: 200px;
+    height: 250px;
+  }
+
+  .col-2{
+width: 50%;
+  }
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .about{
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
+
+    @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .col-2{
+      width: 100%;
+    }
+  }
+     
+      @media (max-width:1400px) and (min-width:768px){
+        .col-2{
+          width: 50%;
+          padding-left: 4rem;
+        }
+        .col-3{
+          width: 50%;
+           padding-left: 4rem;
+        }
+      } 
+
+    
+
+    #meet{
+      width: 100%;
+      height: auto;
+    }
+
+
+
+#MyPic>img{
+  height: 250px;
+  width: 180px;
+  margin: 0px;
+  padding-bottom: 0px;
+}
+
+#about{
+    margin: 1rem;
+}
+
+#bio{
+    margin: 30px;
+}
+
+.picbio{
+  display: flex;
+    flex-direction: row;
+}
+
+
+
+#Myskills>p{
+    display: flex;
+align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.skill1{
+display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.skill2{
+display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.skill3{
+display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills{
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white;
+}
+
+.photo {width: 70%; background-color: #54D17A; color: white; text-align: right;  padding-right: 20px;}
+.web {width: 80%; background-color: #54D17A; color: white; text-align: right;  padding-right: 20px;}
+.Photoshop {width: 90%; background-color: #54D17A; color: white; text-align: right;  padding-right: 20px;}
+
+    
+    
+
+#process{
+  margin: 0 auto;
+  width: 70rem;
+  display: flex;
+}
+
+@media only screen and (max-width: 1100px) {
+    
+    #process{
+     width: 100%;
+
+    }
+  }
+
+h3{
+  display: flex;
+justify-content: center;
+}
+
+#portfolio{
+    margin: 2rem;
+}
+
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: center;
+  }
+.grid img {
+    
+  max-width: 100%;
+}
+
+#contact{
+margin-left: 2rem;
+}
+
+    
+ 
+
+#submit{
+  height: 1.5rem;
+}
+
+#footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem;
+  justify-content: space-between;
+}
+
+
+ 
+
+ #aside{
+  width: 100%;
+ }
+ 
+ 
+
+
+
+ .grid>img{
+  height: 12rem;
+  justify-content: space-between;
+
+}
+
+#myImg:hover{
+  transform: scale(1.5);
+}
+
+button{
+  height: 40%;
+}
+
+#contact{
+  
+display: flex;
+
+  align-items: center;
+  justify-content: center;
+flex-direction: column;
+}
+
+#top{
+  color: #54D17A;
+}
+
+.soc{
+  display: flex;
+  justify-content: center;
+}
+
+.soc>a{
+  margin: 1rem;
+  color: #54D17A;
+font-size: 2rem;
+}
+
+    
+
+
+
+
+
